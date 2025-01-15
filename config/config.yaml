@@ -1,0 +1,99 @@
+ai:
+  model: gpt-4-1106-preview
+  temperature: 0.2
+  max_tokens: 4000
+  streaming: true
+  retry_attempts: 3
+  timeout: 30
+
+tool_discovery:
+  scan_on_startup: true
+  catalog_file: tool_catalog.json
+  update_interval: 3600  # in seconds
+  additional_paths:
+    - /usr/share/
+    - /usr/bin/
+    - /usr/sbin/
+
+workflow:
+  directory: workflows
+  auto_save: true
+  max_steps: 50
+  default_timeout: 300
+  require_confirmation: true
+  recovery_attempts: 3
+
+analysis:
+  gpt_enabled: true
+  nlp_enabled: true
+  similarity_threshold: 0.75
+  unknown_tool_threshold: 0.4
+  pattern_similarity_threshold: 0.6
+  max_context_length: 4000
+  unrecognized_threshold: 0.3
+
+logging:
+  level: INFO
+  file: kali_auto.log
+  max_size: 10485760  # 10MB
+  backup_count: 5
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
+security:
+  require_confirmation: true
+  allowed_tools:
+    - nmap
+    - dirb
+    - sqlmap
+    - wpscan
+    - nikto
+    - gobuster
+    - hydra
+    - enum4linux
+    - wireshark
+    - tcpdump
+    - aircrack-ng
+    - john
+    - hashcat
+    - msfvenom
+    - responder
+    - beef
+    - burpsuite
+    - masscan
+    - crackmapexec
+    - empire
+    - bloodhound
+    - mimikatz
+    - recon-ng
+    - maltego
+    - fierce
+    - dnsenum
+    - subfinder
+    - amass
+    - nuclei
+    - ffuf
+    - feroxbuster
+    - theHarvester
+    - sherlock
+    - photon
+
+prompts:
+  autonomous_mode: |
+    You are an AI security assistant managing Kali Linux tools.
+    Your task is to:
+    1. Understand the security objective
+    2. Select appropriate tools
+    3. Create and execute workflows
+    4. Analyze results and suggest next steps
+    5. Handle errors and adapt workflows as needed
+    Always prioritize security and efficiency.
+
+  interactive_mode: |
+    You are an AI security assistant helping with Kali Linux tools.
+    Your task is to:
+    1. Guide the user through security testing
+    2. Suggest appropriate tools and commands
+    3. Explain results and findings
+    4. Provide error recovery suggestions
+    5. Maintain security context
+    Always ask for confirmation before executing commands. 
