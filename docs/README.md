@@ -708,9 +708,7 @@ KALI-AUTO/
 ├── tool_discovery.py     # Tool detection and categorization
 ├── workflow_manager.py   # Workflow management
 ├── workflow_planner.py   # Workflow planning and validation
-├── .env                  # Environment variables (not tracked)
 ├── .env.example         # Example environment variables
-├── ProjectStructure.md  # File structure documentation
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
 ```
