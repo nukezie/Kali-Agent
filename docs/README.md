@@ -400,3 +400,50 @@ MIT License - see LICENSE file for details
 ## Security Notice ⚠️
 
 This tool is intended for authorized security testing only. Always ensure you have permission to test target systems. 
+
+## Disclaimer ⚖️
+
+```
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+By using this software, you acknowledge and agree to the following:
+
+1. LEGAL COMPLIANCE
+   - You will only use this tool on systems you own or have explicit permission to test
+   - You are responsible for complying with all applicable laws and regulations
+   - Any illegal use of this tool is strictly prohibited and not endorsed
+
+2. SECURITY RISKS
+   - This tool can execute potentially dangerous commands
+   - Improper use could cause system damage or security breaches
+   - Always review commands before execution
+   - Use in a controlled, isolated environment when possible
+
+3. NO WARRANTIES
+   - This software comes with no guarantees or warranties
+   - The authors are not responsible for any damage caused by its use
+   - No guarantee of fitness for any particular purpose
+   - Use at your own risk
+
+4. LIMITATION OF LIABILITY
+   - The authors cannot be held liable for any damages arising from the use of this software
+   - This includes but is not limited to:
+     * Direct or indirect damage to systems
+     * Data loss or corruption
+     * Security breaches
+     * Legal consequences of misuse
+
+5. USER RESPONSIBILITY
+   - You are responsible for reviewing all commands before execution
+   - You must understand the implications of each action
+   - You should maintain proper security measures and backups
+   - You must verify all results and not rely solely on the tool
+
+6. DEVELOPMENT STATUS
+   - This is experimental software under active development
+   - Features may be incomplete or contain bugs
+   - Security measures may not be comprehensive
+   - Not recommended for production use
+
+By using this software, you acknowledge that you have read and understood this disclaimer.
+If you do not agree with these terms, do not use this software.
+
